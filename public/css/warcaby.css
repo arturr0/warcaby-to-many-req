@@ -1,0 +1,119 @@
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px transparent;
+    border: solid 3px transparent;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px white;
+    border: solid 3px transparent;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: green;
+  }
+  @font-face {
+    font-family: 'fontello';
+    src: url('fontello.woff2') format('woff2'),
+         url('fontello.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* @media (max-device-width: 1200px) and (orientation: landscape) {
+      
+  }
+  @media (max-device-width: 1200px) and (orientation: portrait) {
+    
+    
+  }
+  @media (max-device-width: 1200px) {
+    
+  }
+  
+  @media only screen and (min-device-width: 900px) {
+    
+  } */
+  #main {
+    display: flex;
+    background-color: rgb(65,105,225);
+    flex-direction: row;
+    height: calc(100vh - 32px);
+}
+#info {
+    margin: 0;
+    padding: 0;
+}
+#chatContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#historyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.message_kill, .message_move {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#chat {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    background-color: rgb(176,196,222);
+    justify-content: flex-end;
+}
+
+#messages {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.messSend {
+    align-self: flex-end;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+.messRec {
+    align-self: flex-start;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#history {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    background-color: rgb(176,196,222);
+}
+
+#game {
+  
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  border-radius: 10px;
+  
+  
+}
+
+  
+ 
+  
+  

@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title My Projects
+    link(rel='stylesheet' href='/public/css/home.css')
+    link(rel='stylesheet' href='/public/css/fontello.css')
+    link(rel='stylesheet' href='/public/css/animation.css')
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+  body
+    input#inputText(type='text', name='inputText')
+    button#createServer CREATE SERVER
+    div#servers
+      table#serversTable
+        thead
+          tr
+            th(style="width: 100px;") Server
+            th(style="width: 100px;") Action
+            th(style="min-width: 100px;") Player 1
+            th(style="min-width: 100px;") Player 2
+        tbody
+        tfoot 
+          th.footer(colspan="4")
+            button#find_players FIND WAITING PLAYERS
+          // Add your table rows here
+    script(src='/socket.io/socket.io.js')
+    script(src='public/home.js')
